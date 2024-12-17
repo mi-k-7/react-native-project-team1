@@ -28,6 +28,7 @@ const Page6 = ({ next, back }) => {
     const isCorrect =
       userAnswer1 === answerInfo[1][1] &&
       userAnswer2 === answerInfo[2][0] &&
+      answerInfo3Correct.length === userAnswer3.length &&
       answerInfo3Correct.every((correct) => userAnswer3.includes(correct));
 
     if (isCorrect) {
